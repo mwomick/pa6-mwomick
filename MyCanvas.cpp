@@ -143,7 +143,7 @@ public:
 
     void drawQuad(const GPoint verts[4], const GColor colors[4], const GPoint texs[4],
                               int level, const GPaint& paint) override {
-        fDevice->drawQuad(verts, colors, texs, level, paint);
+        fDevice->drawQuad(verts, colors, texs, level, paint, fCTMStack.top());
 
     }
 

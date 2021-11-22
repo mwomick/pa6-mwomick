@@ -51,8 +51,11 @@ public:
     } 
 
     void drawQuad(const GPoint verts[4], const GColor colors[4], const GPoint texs[4],
-                              int level, const GPaint& paint) {
-        
+                              int level, const GPaint& paint, const GMatrix& ctm) {
+        GDraw draw = GDraw();
+        draw.fDst = &fBitmap;
+        draw.fBounds = &fBounds;
+        draw.drawQuad(verts, colors, texs, level, paint, ctm); 
     }
 
     void drawMesh(const GPoint verts[], const GColor colors[], const GPoint texs[],
