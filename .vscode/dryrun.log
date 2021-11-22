@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/michaelwomick/Desktop/pa6-mwomick-main'
+g++ -g -Wno-float-conversion -Wno-narrowing -Wreturn-type -Wunused-function -Wreorder -Wunused-variable -std=c++11 -Iinclude -Iapps  src/*.cpp *.cpp apps/image.cpp apps/image_recs.cpp -o image
+g++ -g -Wno-float-conversion -Wno-narrowing -Wreturn-type -Wunused-function -Wreorder -Wunused-variable -std=c++11 -Iinclude -Iapps  src/*.cpp *.cpp apps/tests.cpp apps/tests_recs.cpp -o tests
+g++ -g -Wno-float-conversion -Wno-narrowing -Wreturn-type -Wunused-function -Wreorder -Wunused-variable -std=c++11 -O3 -DNDEBUG -Iinclude -Iapps  src/*.cpp *.cpp apps/GTime.cpp apps/bench.cpp apps/bench_recs.cpp -o bench
+make: Leaving directory `/Users/michaelwomick/Desktop/pa6-mwomick-main'
+ 
